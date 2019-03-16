@@ -21,7 +21,7 @@ int Full(Stack* S){
 
 void pop(Stack* S, char* X){
 	if (Empty(S)) printf("Attempted to pop from an empty stack\n");
-	else{
+	else {
 		(S->count)--;
 		*X=S->Input[S->count];
 	}
@@ -29,7 +29,7 @@ void pop(Stack* S, char* X){
 
 void push(Stack* S, char X){
 	if (Full(S)) printf("Attempted to push into a full stack\n");
-	else{
+	else {
 		S->Input[S->count]=X;
 		(S->count)++;
 	}
